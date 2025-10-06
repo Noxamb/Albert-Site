@@ -44,12 +44,12 @@ nav a:hover{
 .about-section{
     display: grid;
     border: 4px solid rgb(255, 255, 255); /*remve later just for length purpose*/
-    grid-template-areas: "image about-contianer";
+    grid-template-areas: "image about-container";
     grid-template-columns: 2fr 2fr;
 }
 
 .about-container{
-    grid-area: about-contianer
+    grid-area: about-container
 }
 
 .about-section img{
@@ -72,4 +72,11 @@ nav a:hover{
     .hamburger{
         display: block;
     }
+
+    .about-section{
+        grid-template-columns: 1fr;
+        grid-template-areas: "image" "about-container";
+        justify-items: center;
+    }   
+
 }
