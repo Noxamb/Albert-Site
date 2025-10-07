@@ -12,35 +12,91 @@
 <body>
     <header>
         <!-- Navigation Bar -->
-        <nav>
-             <img src="apple.png" alt="apple"> 
+        <nav id="navBar">
+            <img src="apple.png" alt="apple">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#papers">Papers</a></li>
+                <li><a href = "#hobbies">Hobbies</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="facts">Fun-Facts </a></li>
+                <li><a href="#facts">Fun-Facts </a></li>
             </ul>
         </nav>
         <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">
-        &#9776; <!-- ☰ symbol --> </a>
+            &#9776; <!-- ☰ symbol --> </a>
     </header>
 
     <main>
         <!-- About Section -->
         <h1>About Me</h1>
-        <section class="about-section" id = "about">
+        <section class="about-section" id="about">
             <img src="albert.jpg" alt="Albert Einstein">
             <div class="about-container">
-               <!-- Check this text later -->
-                <p>Albert Einstein was a theoretical physicist who developed the theory of relativity, one of the two
-                    pillars of modern physics (alongside quantum mechanics). His work is also known for its influence on
-                    the philosophy of science. He is best known to the general public for his mass–energy equivalence
-                    formula E = mc², which has been dubbed "the world's most famous equation".</p>
+                <p>Hello! I’m Albert Einstein, a theoretical physicist best known for developing the theory of
+                    relativity — one of the two pillars of modern physics, alongside quantum mechanics.
+                    My work has also influenced the philosophy of science, and I’m perhaps most recognized for the
+                    equation E = mc², which expresses the relationship between mass and energy.
+                    Throughout my life, I’ve been driven by curiosity and a deep desire to understand the mysteries of
+                    the universe. You can learn more about my life and contributions on my
+                    <a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia page</a>.
+                </p>
             </div>
         </section>
+        <hr>
         <!-- Papers Section -->
-        <h1>Papers</h1>
+        <h1>Papers By Me</h1>
+        <section id=papers>
+            <div class="paper-block">
+                <a href="https://www.fourmilab.ch/etexts/einstein/specrel/specrel.pdf" target="_blank">
+                    <h2>On the Electrodynamics of Moving Bodies (1905)</h2>
+                    <p><em>Einstein's foundational paper introducing the Special Theory of Relativity. 🔗</em></p>
+                </a>
+            </div>
+
+            <div class="paper-block">
+
+                <a href="https://www.gutenberg.org/cache/epub/5001/pg5001-images.html" target="_blank">
+                    <h2>Relativity: The Special and General Theory</h2>
+                    <p><em>Einstein's 1916 book explaining both Special and General Relativity for a general audience.
+                            🔗</em></p>
+                </a>
+            </div>
+
+            <div class="paper-block">
+
+                <a href="https://archive.org/details/principleofrelat00eins/page/n123/mode/2up" target="_blank">
+                    <h2>The Principle of Relativity</h2>
+                    <p><em>A collection of key papers on relativity theory, including the photoelectric effect and
+                            related works. 🔗</em></p>
+                </a>
+            </div>
+        </section>
+    <hr>
+    <!--Hobby Section-->
+    <h1>Hobbies</h1>
+    <section id = "hobbies">
+        <div class = "hobby-card"> Playing the Violin🎻</div>
+        <div class = "hobby-card"> Sailing ⛵</div>
+        <div class = "hobby-card"> Puzzles 🧩</div>
+        <div class = "hobby-card">Reading 📖</div>
+        <div class = "hobby-card"> Long Walks 🚶‍♀️</div>
+        <div class = "hobby-card"> Spending time with Family 👪</div>
+    </section>
+    <hr>
+    <!--Gallery Section-->
+    <h1>Gallery</h1>
+    <section id = "gallery">
+        <div class = "gallery-block"><img src="albert1.jpg" alt="Albert Conference"></div>
+        <div class = "gallery-block"><img src="albert3.jpg" alt="Albert Stoic"></div>
+        <div class = "gallery-block"><img src="albert4.jpg" alt="Albert Pondering"></div>
+        <div class = "gallery-block"><img src="albert5.jpg" alt="Albert Violin"></div>
+        <div class = "gallery-block"><img src="albert6.jpg" alt="Albert Sailing"></div>
+        <div class = "gallery-block"><img src="albert7.jpg" alt="Albert Family"></div>
+    </section>
+    <hr>
+    <!--Blog-->
+    <section id = blog></section>
     </main>
 </body>
 
