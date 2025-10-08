@@ -18,6 +18,7 @@ nav{
     border: 5px solid #cfd8dc;
     display: flex;
     align-items: center;
+
     
 }
 
@@ -66,6 +67,9 @@ nav a:hover{
 }
 .about-container a{
     text-decoration: none;
+}
+.about-container a:hover{
+    text-decoration: underline;
 }
 
 .about-section img{
@@ -127,9 +131,8 @@ nav a:hover{
 .hobby-card{
     border: 1px solid #cfd8dc;
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 1.3em;
     padding: 20px;
-    font-size: 25px;
     min-width: 150px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -173,6 +176,25 @@ nav a:hover{
     opacity: .8;
 }
 
+.contact-container{
+    display: flex;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 20px 0;
+
+}
+
+.contact-container ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.contact-bottom{
+    text-align: center;
+    font-size: 1.3em;
+}
 
 @media (max-width:500px){
     nav{
@@ -201,4 +223,10 @@ nav a:hover{
     #gallery{
         grid-template-columns: 1fr;
     }
+
+    .contact-container ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
